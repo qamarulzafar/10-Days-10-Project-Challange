@@ -76,7 +76,7 @@ def login():
             if st.session_state["users"].get(username) == hashed:
                 st.success(f"Welcome back, {username}!")
             else:
-                 st.warning("Username and Password cannot be empty.")
+                 st.warning("Incorrect Password.")
 
 
 st.sidebar.title("🔄 Navigation")
